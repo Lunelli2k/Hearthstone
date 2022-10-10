@@ -8,7 +8,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title></title>
+    <title>Hearthstone API</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,7 +29,7 @@ https://templatemo.com/tm-579-cyborg-gaming
 -->
   </head>
 
-<body>
+<body onload="filtros('Classic')">
 
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
@@ -44,30 +44,19 @@ https://templatemo.com/tm-579-cyborg-gaming
   </div>
   <!-- ***** Preloader End ***** -->
 
-  <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <nav class="main-nav">
-            
+                <nav class="main-nav text-center">
+                    <!-- ***** Logo Start ***** -->
                     <a href="index.html" class="logo">
                         <img src="assets/images/logo.png" alt="">
                     </a>
-                    
-                    <div class="search-input">
-                      <form id="search" action="#">
-                        <input type="text" placeholder="Digite a sua busca" id='searchText' name="searchKeyword" onkeypress="handle" />
-                        <i class="fa fa-search"></i>
-                      </form>
-                    </div>
-                    
-                    <ul class="nav">
-                        <li><a href="index.html" class="active">Inicio</a></li>
-                        <li><a href="browse.html">Navegar</a></li>
-                        <li><a href="details.html">Detalhes</a></li>
-                        <li><a href="profile.html">Perfil <img src="assets/images/profile-header.jpg" alt=""></a></li>
-                    </ul>   
+                    <ul class="nav ">
+                      <li><a href="index.html" class="active m-auto">Inicio</a></li>
+                      <li><a href="browse.html">Versos</a></li>
+                    </ul>  
                     <a class='menu-trigger'>
                         <span>Menu</span>
                     </a>
@@ -77,15 +66,14 @@ https://templatemo.com/tm-579-cyborg-gaming
         </div>
     </div>
   </header>
-  <!-- ***** Header Area End ***** -->
 
-  <div class="container">
+  <div class="container" >
     <div class="row">
       <div class="col-lg-12">
         <div class="page-content">
 
           <!-- ***** Banner Start ***** -->
-          <div class="main-banner">
+          <div class="main-banner" id="alow">
             <div class="row">
               <div class="col-lg-7">
                 <div class="header-text">
@@ -105,75 +93,40 @@ https://templatemo.com/tm-579-cyborg-gaming
             <div class="row">
               <div class="col-lg-12">
                 <div class="heading-section">
-                  <h4><em>Classes</em></h4>
+                  <h4><em>Car</em>tas</h4>
                 </div>
-                <div class="row">
-                  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                     
-                      <div class="carousel-item">
-                        <img src="./assets/classIcons/DHunter.gif" class="d-block w-25" alt="...">
+                <div class="row text-center">
+            
+                </div>
+                  <div class="search-input">
+                    <form id="search" action="#">
+                      <input class="form-control text-center w-50 m-auto bg-opacity-25 text-bg-danger bg-black border-info p-3" type="text" placeholder="Digite o nome de uma carta:" id="searchText" name="searchKeyword" onkeyup="pesquisaCards()">
+                      <i class="fa fa-search"></i>
+                    </form>
+                    <div class="row">
+                      <div class="col-3 text-center expansaoHover">
+                        <a class="ponteiro"><img class="w-75 " src="./images/ClassHeaders/KnightsOfFrozenThrone.png" onclick="filtros('Knights%20of%20the%20Frozen%20Throne')" alt=""></a>
+                      </div>
+                      <div class="col-3 text-center expansaoHover">
+                        <a class="ponteiro"><img src="./images/ClassHeaders/NegralunaDelusions.png" onclick="filtros('Madness%20at%20the%20Darkmoon%20Faire')"  alt=""></a>
+                      </div>
+                      <div class="col-3 text-center expansaoHover">
+                        <a class="ponteiro"><img src="./images/ClassHeaders/MurderOnNathiriaCastle.png" onclick="filtros('Murder%20at%20Castle%20Nathria')"  alt=""></a>
+                      </div>
+                      <div class="col-3 text-center expansaoHover">
+                        <a class="ponteiro"><img class="w-75" src="./images/ClassHeaders/CurseOfNaxxramas.png"  alt="" onclick="filtros('Naxxramas')"></a>
                       </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
                   </div>
+                  <div id="teste" onload="">
+                    
+                  </div>
+                  
                 </div>
               </div>
             </div>
           </div>
           <!-- ***** Most Popular End ***** -->
-
-          <!-- ***** Gaming Library Start ***** -->
-          <div class="gaming-library">
-            <div class="col-lg-12">
-              <div class="heading-section">
-                <h4><em>Your Gaming</em> Library</h4>
-              </div>
-              <div class="item">
-                <ul>
-                  <li><img src="assets/images/game-01.jpg" alt="" class="templatemo-item"></li>
-                  <li><h4>Dota 2</h4><span>Sandbox</span></li>
-                  <li><h4>Date Added</h4><span>24/08/2036</span></li>
-                  <li><h4>Hours Played</h4><span>634 H 22 Mins</span></li>
-                  <li><h4>Currently</h4><span>Downloaded</span></li>
-                  <li><div class="main-border-button border-no-active"><a href="#">Donwloaded</a></div></li>
-                </ul>
-              </div>
-              <div class="item">
-                <ul>
-                  <li><img src="assets/images/game-02.jpg" alt="" class="templatemo-item"></li>
-                  <li><h4>Fortnite</h4><span>Sandbox</span></li>
-                  <li><h4>Date Added</h4><span>22/06/2036</span></li>
-                  <li><h4>Hours Played</h4><span>740 H 52 Mins</span></li>
-                  <li><h4>Currently</h4><span>Downloaded</span></li>
-                  <li><div class="main-border-button"><a href="#">Donwload</a></div></li>
-                </ul>
-              </div>
-              <div class="item last-item">
-                <ul>
-                  <li><img src="assets/images/game-03.jpg" alt="" class="templatemo-item"></li>
-                  <li><h4>CS-GO</h4><span>Sandbox</span></li>
-                  <li><h4>Date Added</h4><span>21/04/2036</span></li>
-                  <li><h4>Hours Played</h4><span>892 H 14 Mins</span></li>
-                  <li><h4>Currently</h4><span>Downloaded</span></li>
-                  <li><div class="main-border-button border-no-active"><a href="#">Donwloaded</a></div></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="main-button">
-                <a href="profile.html">View Your Library</a>
-              </div>
-            </div>
-          </div>
-          <!-- ***** Gaming Library End ***** -->
         </div>
       </div>
     </div>
@@ -183,9 +136,9 @@ https://templatemo.com/tm-579-cyborg-gaming
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <p>Copyright © 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved. 
+          <p>Copyright © 2036 - <a href="#">Free Bootstrap template Cyborg Gaming</a> - Adaptação by Gabriel Lunelli - Github <a href="https://github.com">Lunelli2k</a>. 
           
-          <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a>  Distributed By <a href="https://themewagon.com" target="_blank" >ThemeWagon</a></p>
+          <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo |</a>  Distributed By <a href="https://themewagon.com" target="_blank" >ThemeWagon</a></p>
         </div>
       </div>
     </div>
@@ -196,7 +149,7 @@ https://templatemo.com/tm-579-cyborg-gaming
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
+  <script src="./assets/js/ApiRequest.js"></script>
   <script src="assets/js/isotope.min.js"></script>
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/tabs.js"></script>
