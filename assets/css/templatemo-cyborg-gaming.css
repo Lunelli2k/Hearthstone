@@ -41,6 +41,31 @@ figure, header, nav, section, article, aside, footer, figcaption {
   outline: 0;
 }
 
+.ponteiro{
+  cursor: pointer;
+}
+.expansaoHover:hover{
+  padding: 0.3%;
+}
+
+.versoHover:hover{
+  padding: 0.5%;
+}
+.backVerso {
+  background-color: #353637;
+}
+
+.backVersoBackground{
+  background-color:#1f2122
+}
+
+.textoFormat{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 100%;
+  color: #9b4bca;
+  text-align: justify;
+  margin-top: auto;
+}
 .clearfix:after {
   content: ".";
   display: block;
@@ -178,9 +203,9 @@ p {
 
 .main-border-button a {
   font-size: 14px;
-  color: #ec6090;
+  color: #9b4bca;
   background-color: transparent;
-  border: 1px solid #ec6090;
+  border: 1px solid #9b4bca;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 25px;
@@ -214,7 +239,7 @@ section {
 }
 
 .heading-section h4 {
-  color: #ec6090;
+  color: #9b4bca;
   font-size: 34px;
   text-decoration: none;
   margin-bottom: 30px;
@@ -736,7 +761,7 @@ Header Style
     display: none;
   }
   .header-area .main-nav .nav li:last-child a:hover {
-    color: #ec6090 !important;
+    color: #9b4bca !important;
     background-color: transparent !important;
   }
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
@@ -778,6 +803,15 @@ Banner Style
 --------------------------------------------- 
 */
 
+.cartasHover:hover{
+  padding: 0.70%;
+  cursor: pointer;
+}
+.qualitySize:hover{
+  padding: 0.15%;
+  cursor: pointer;
+}
+
 .main-banner {
   background-image: url(../images/banner-bg.jpg);
   background-position: center center;
@@ -802,7 +836,7 @@ Banner Style
 
 .main-banner h4 em {
   font-style: normal;
-  color: #ec6090;
+  color: #9b4bca;
 }
 
 /* 
@@ -866,7 +900,7 @@ Most Popular Style
 }
 
 .most-popular .item ul li:last-child i {
-  color: #ec6090;
+  color: #9b4bca;
 }
 
 .most-popular .main-button {
@@ -959,7 +993,7 @@ footer p a {
 }
 
 footer p a:hover {
-  color: #ec6090;
+  color: #9b4bca;
 }
 
 /* 
@@ -998,7 +1032,7 @@ Featured Games Style
 .featured-games .item .thumb .hover-effect h6 {
   background-color: rgba(31,33,34,0.95);
   display: inline-block;
-  color: #ec6090;
+  color: #9b4bca;
   font-weight: 600;
   font-size: 14px;
   padding: 10px 20px;
@@ -1039,7 +1073,7 @@ Featured Games Style
 }
 
 .featured-games .item ul li:last-child i {
-  color: #ec6090;
+  color: #9b4bca;
 }
 
 .featured-games .owl-nav {
@@ -1069,7 +1103,7 @@ Featured Games Style
 .featured-games .owl-nav .owl-prev span:hover,
 .featured-games .owl-nav .owl-next span:hover {
   opacity: 1;
-  color: #ec6090;
+  color: #9b4bca;
 }
 
 .top-downloaded {
