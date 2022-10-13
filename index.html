@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
   <head>
 
@@ -8,7 +8,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Hearthstone API</title>
+    <title>Hearthstone API - Home</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,7 +29,7 @@ https://templatemo.com/tm-579-cyborg-gaming
 -->
   </head>
 
-<body onload="filtros('Classic')">
+<body>
 
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
@@ -44,19 +44,24 @@ https://templatemo.com/tm-579-cyborg-gaming
   </div>
   <!-- ***** Preloader End ***** -->
 
+  <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <nav class="main-nav text-center">
-                    <!-- ***** Logo Start ***** -->
+                <nav class="main-nav">
+                    
                     <a href="index.html" class="logo">
                         <img src="assets/images/logo.png" alt="">
                     </a>
-                    <ul class="nav ">
-                      <li><a href="index.html" class="active m-auto">Inicio</a></li>
-                      <li><a href="browse.html">Versos</a></li>
-                    </ul>  
+
+                    <div class="col-lg-7"></div>
+                      
+                    <ul class="nav">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="cartas.html">Cartas</a></li>
+                        <li><a href="versos.html">Versos</a></li>
+                    </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
                     </a>
@@ -66,67 +71,160 @@ https://templatemo.com/tm-579-cyborg-gaming
         </div>
     </div>
   </header>
+  <!-- ***** Header Area End ***** -->
 
-  <div class="container" >
+  <div class="container">
     <div class="row">
       <div class="col-lg-12">
         <div class="page-content">
 
-          <!-- ***** Banner Start ***** -->
-          <div class="main-banner" id="alow">
-            <div class="row">
-              <div class="col-lg-7">
-                <div class="header-text">
-                  <h3 class="mb-4">&nbsp;</h3>
-                  <h4><em></em></h4>
-                  <div class="main-button">
-                    <a href="browse.html"></a>
+          <!-- ***** Featured Start ***** -->
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="feature-banner header-text">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <img src="assets/images/feature-left.jpg" alt="" style="border-radius: 23px;">
+                  </div>
+                  <div class="col-lg-8">
+                    <div class="thumb">
+                      <img src="assets/images/feature-right.jpg" alt="" style="border-radius: 23px;">
+                      <a href="https://www.youtube.com/watch?v=r1b03uKWk_M" target="_blank"><i class="fa fa-play"></i></a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- ***** Banner End ***** -->
+          <!-- ***** Featured End ***** -->
 
-          <!-- ***** Most Popular Start ***** -->
-          <div class="most-popular">
+          <!-- ***** Details Start ***** -->
+          <div class="game-details">
             <div class="row">
               <div class="col-lg-12">
-                <div class="heading-section">
-                  <h4><em>Car</em>tas</h4>
-                </div>
-                <div class="row text-center">
-            
-                </div>
-                  <div class="search-input">
-                    <form id="search" action="#">
-                      <input class="form-control text-center w-50 m-auto bg-opacity-25 text-bg-danger bg-black border-info p-3" type="text" placeholder="Digite o nome de uma carta:" id="searchText" name="searchKeyword" onkeyup="pesquisaCards()">
-                      <i class="fa fa-search"></i>
-                    </form>
-                    <div class="row">
-                      <div class="col-lg-3 col-sm-6 text-center expansaoHover">
-                        <a class="ponteiro"><img class="w-75 " src="./images/ClassHeaders/KnightsOfFrozenThrone.png" onclick="filtros('Knights%20of%20the%20Frozen%20Throne')" alt=""></a>
+                <h2>Fortnite Details</h2>
+              </div>
+              <div class="col-lg-12">
+                <div class="content">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="left-info">
+                        <div class="left">
+                          <h4>Fortnite</h4>
+                          <span>Sandbox</span>
+                        </div>
+                        <ul>
+                          <li><i class="fa fa-star"></i> 4.8</li>
+                          <li><i class="fa fa-download"></i> 2.3M</li>
+                        </ul>
                       </div>
-                      <div class="col-lg-3 col-sm-6 text-center expansaoHover">
-                        <a class="ponteiro"><img src="./images/ClassHeaders/NegralunaDelusions.png" onclick="filtros('Madness%20at%20the%20Darkmoon%20Faire')"  alt=""></a>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="right-info">
+                        <ul>
+                          <li><i class="fa fa-star"></i> 4.8</li>
+                          <li><i class="fa fa-download"></i> 2.3M</li>
+                          <li><i class="fa fa-server"></i> 36GB</li>
+                          <li><i class="fa fa-gamepad"></i> Action</li>
+                        </ul>
                       </div>
-                      <div class="col-lg-3 col-sm-6 text-center expansaoHover">
-                        <a class="ponteiro"><img src="./images/ClassHeaders/MurderOnNathiriaCastle.png" onclick="filtros('Murder%20at%20Castle%20Nathria')"  alt=""></a>
-                      </div>
-                      <div class="col-lg-3 col-sm-6 text-center expansaoHover">
-                        <a class="ponteiro"><img class="w-75" src="./images/ClassHeaders/CurseOfNaxxramas.png"  alt="" onclick="filtros('Naxxramas')"></a>
+                    </div>
+                    <div class="col-lg-4">
+                      <img src="assets/images/details-01.jpg" alt="" style="border-radius: 23px; margin-bottom: 30px;">
+                    </div>
+                    <div class="col-lg-4">
+                      <img src="assets/images/details-02.jpg" alt="" style="border-radius: 23px; margin-bottom: 30px;">
+                    </div>
+                    <div class="col-lg-4">
+                      <img src="assets/images/details-03.jpg" alt="" style="border-radius: 23px; margin-bottom: 30px;">
+                    </div>
+                    <div class="col-lg-12">
+                      <p>Cyborg Gaming is free HTML CSS website template provided by TemplateMo. This is Bootstrap v5.2.0 layout. You can make a <a href="https://paypal.me/templatemo" target="_blank">small contribution via PayPal</a> to info [at] templatemo.com and thank you for supporting. If you want to get the PSD source files, please contact us. Lorem ipsum dolor sit consectetur es dispic dipiscingei elit, sed doers eiusmod lisum hored tempor.</p>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="main-border-button">
+                        <a href="#">Download Fortnite Now!</a>
                       </div>
                     </div>
                   </div>
-                  <div id="teste" onload="">
-                    
-                  </div>
-                  
                 </div>
               </div>
             </div>
           </div>
-          <!-- ***** Most Popular End ***** -->
+          <!-- ***** Details End ***** -->
+
+          <!-- ***** Other Start ***** -->
+          <div class="other-games">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4><em>Other Related</em> Games</h4>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item">
+                  <img src="assets/images/game-01.jpg" alt="" class="templatemo-item">
+                  <h4>Dota 2</h4><span>Sandbox</span>
+                  <ul>
+                    <li><i class="fa fa-star"></i> 4.8</li>
+                    <li><i class="fa fa-download"></i> 2.3M</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item">
+                  <img src="assets/images/game-02.jpg" alt="" class="templatemo-item">
+                  <h4>Dota 2</h4><span>Sandbox</span>
+                  <ul>
+                    <li><i class="fa fa-star"></i> 4.8</li>
+                    <li><i class="fa fa-download"></i> 2.3M</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item">
+                  <img src="assets/images/game-03.jpg" alt="" class="templatemo-item">
+                  <h4>Dota 2</h4><span>Sandbox</span>
+                  <ul>
+                    <li><i class="fa fa-star"></i> 4.8</li>
+                    <li><i class="fa fa-download"></i> 2.3M</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item">
+                  <img src="assets/images/game-02.jpg" alt="" class="templatemo-item">
+                  <h4>Dota 2</h4><span>Sandbox</span>
+                  <ul>
+                    <li><i class="fa fa-star"></i> 4.8</li>
+                    <li><i class="fa fa-download"></i> 2.3M</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item">
+                  <img src="assets/images/game-03.jpg" alt="" class="templatemo-item">
+                  <h4>Dota 2</h4><span>Sandbox</span>
+                  <ul>
+                    <li><i class="fa fa-star"></i> 4.8</li>
+                    <li><i class="fa fa-download"></i> 2.3M</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item">
+                  <img src="assets/images/game-01.jpg" alt="" class="templatemo-item">
+                  <h4>Dota 2</h4><span>Sandbox</span>
+                  <ul>
+                    <li><i class="fa fa-star"></i> 4.8</li>
+                    <li><i class="fa fa-download"></i> 2.3M</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Other End ***** -->
+
         </div>
       </div>
     </div>
@@ -136,9 +234,9 @@ https://templatemo.com/tm-579-cyborg-gaming
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <p>Copyright © 2036 - <a href="#">Free Bootstrap template Cyborg Gaming</a> - Adaptação by Gabriel Lunelli - Github <a href="https://github.com">Lunelli2k</a>. 
+          <p>Copyright © 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved. 
           
-          <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo |</a>  Distributed By <a href="https://themewagon.com" target="_blank" >ThemeWagon</a></p>
+          <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a>  Distributed By <a href="https://themewagon.com" target="_blank" >ThemeWagon</a></p>
         </div>
       </div>
     </div>
@@ -149,7 +247,7 @@ https://templatemo.com/tm-579-cyborg-gaming
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="./assets/js/ApiRequest.js"></script>
+
   <script src="assets/js/isotope.min.js"></script>
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/tabs.js"></script>

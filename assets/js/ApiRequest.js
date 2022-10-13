@@ -3,7 +3,6 @@ function filtros(expansao){
     
     var expansaoFiltro = expansao
     
-     
     const data = null;
 
     const requisicao = new XMLHttpRequest();
@@ -16,20 +15,28 @@ function filtros(expansao){
     var retorno = JSON.parse(requisicao.responseText);
     var cartas = document.getElementById("teste");
     cartas.innerHTML = '';
+    
     for(i in retorno){
         var imagem = retorno[i].img;
-        if (imagem != null) {
-            var a = document.createElement('a');
-            var img = document.createElement('img');
-            a.appendChild(img)
-            cartas.appendChild(a)
-            img.src = imagem;
-            img.classList.add('col-lg-3')
-            img.classList.add('col-md-6')
-            img.classList.add('col-sm-12')
-            img.classList.add('cartasHover')
-            
+        console.log(cardName)
+        if (cardName != retorno[i].name) {
+            if (imagem != null) {
+                if (retorno[i].type != "Hero") {
+                    console.log(retorno[i].name)
+                var a = document.createElement('a');
+                var img = document.createElement('img');
+                a.appendChild(img)
+                cartas.appendChild(a)
+                img.src = imagem;
+                img.classList.add('col-lg-3')
+                img.classList.add('col-md-4')
+                img.classList.add('col-sm-6')
+                img.classList.add('cartasHover')
+                
+                }
+            }
         }
+        var cardName = retorno[i].name;
     }
 }
 
@@ -58,9 +65,10 @@ function pesquisaCards(){
             cartas.appendChild(a)
             img.src = imagem;
             img.classList.add('col-lg-3')
-            img.classList.add('col-md-6')
-            img.classList.add('col-sm-12')
+            img.classList.add('col-md-4')
+            img.classList.add('col-sm-6')
             img.classList.add('cartasHover')
+            img.classList.add('w-25')
             
         }
     }
