@@ -822,6 +822,7 @@ Banner Style
   background-image: url(../images/banner-bg.jpg);
   background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
   min-height: 400px;
   border-radius: 23px;
   padding: 80px 60px;
