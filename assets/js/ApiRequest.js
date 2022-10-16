@@ -11,18 +11,20 @@ function filtros(expansao){
     requisicao.open("GET", "https://omgvamp-hearthstone-v1.p.rapidapi.com/cards/sets/"+expansaoFiltro+"?collectible=1&locale=ptBR", false);
     requisicao.setRequestHeader("X-RapidAPI-Key", "c8cc595170mshda399f5c2f87254p1f3d2fjsn5e58bc5be333");
     requisicao.setRequestHeader("X-RapidAPI-Host", "omgvamp-hearthstone-v1.p.rapidapi.com");
+    $("#js-preloader").show();
     requisicao.send(data);
     var retorno = JSON.parse(requisicao.responseText);
+    $("#js-preloader").hide();
     var cartas = document.getElementById("teste");
     cartas.innerHTML = '';
     
     for(i in retorno){
         var imagem = retorno[i].img;
-        console.log(cardName)
+        
         if (cardName != retorno[i].name) {
             if (imagem != null) {
                 if (retorno[i].type != "Hero") {
-                    console.log(retorno[i].name)
+
                 var a = document.createElement('a');
                 var img = document.createElement('img');
                 a.appendChild(img)
@@ -37,6 +39,25 @@ function filtros(expansao){
             }
         }
         var cardName = retorno[i].name;
+    }
+    var nome = document.getElementById('conjuntoNome');
+    
+    if (expansaoFiltro == 'Madness%20at%20the%20Darkmoon%20Faire') {
+        nome.innerHTML = ' Conjunto: Delirios em Negraluna'
+        
+    }
+    else if(expansaoFiltro == 'Murder%20at%20Castle%20Nathria'){
+        nome.innerHTML = ' Conjunto: Assassinato no Castelo de Nathiria'
+        
+    }
+    else if(expansaoFiltro == 'Knights%20of%20the%20Frozen%20Throne'){
+        nome.innerHTML = ' Conjunto: Cavaleiros do Trono de Gelo'
+    }
+    else if(expansaoFiltro == 'Naxxramas'){
+        nome.innerHTML = ' Conjunto: Maldição de Naxxramas'
+    }
+    else{
+        nome.innerHTML = ' Conjunto: Clássico'
     }
 }
 
@@ -53,25 +74,28 @@ function pesquisaCards(){
 
     buscaReq.send(data);
     var retorno = JSON.parse(buscaReq.responseText);
-    console.log(retorno)
-    var cartas = document.getElementById("teste");
+        var cartas = document.getElementById("teste");
     cartas.innerHTML = '';
     for(i in retorno){
         var imagem = retorno[i].img;
-        if (imagem != null) {
-            var a = document.createElement('a');
-            var img = document.createElement('img');
-            a.appendChild(img)
-            cartas.appendChild(a)
-            img.src = imagem;
-            img.classList.add('col-lg-3')
-            img.classList.add('col-md-4')
-            img.classList.add('col-sm-6')
-            img.classList.add('cartasHover')
-            img.classList.add('w-25')
-            
+        if (cardName != retorno[i].name) {
+            if (imagem != null) {
+                var a = document.createElement('a');
+                var img = document.createElement('img');
+                a.appendChild(img)
+                cartas.appendChild(a)
+                img.src = imagem;
+                img.classList.add('col-lg-3')
+                img.classList.add('col-md-4')
+                img.classList.add('col-sm-6')
+                img.classList.add('cartasHover')
+                
+            }
         }
+        var cardName = retorno[i].name;
     }
+    var nome = document.getElementById('conjuntoNome');
+    nome.innerHTML = '';
 }   
 
 function versos(){
@@ -171,3 +195,4 @@ function carregaDetalhes(id){
     detalhes.innerHTML = descricaoVerso
     
 }
+
