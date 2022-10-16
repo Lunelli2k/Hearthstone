@@ -57,8 +57,8 @@ https://templatemo.com/tm-579-cyborg-gaming
                     <div class="col-lg-7"></div>
                       
                     <ul class="nav">
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="cartas.html">Cartas</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cartas.html" class="active">Cartas</a></li>
                         <li><a href="versos.html">Versos</a></li>
                     </ul>   
                     <a class='menu-trigger'>
@@ -92,20 +92,22 @@ https://templatemo.com/tm-579-cyborg-gaming
           </div>
           <!-- ***** Banner End ***** -->
 
+          
           <div class="row m-4">
-            <div class="col-lg-3 col-sm-6 text-center expansaoHover">
+            <div class="col-lg-3 col-sm-6 text-center expansaoHover" id="cavaleiros">
               <a class="ponteiro"><img class="w-75 " src="./images/ClassHeaders/KnightsOfFrozenThrone.png" onclick="filtros('Knights%20of%20the%20Frozen%20Throne')" alt=""></a>
             </div>
-            <div class="col-lg-3 col-sm-6 text-center expansaoHover">
+            <div class="col-lg-3 col-sm-6 text-center expansaoHover" id="negraluna">
               <a class="ponteiro"><img src="./images/ClassHeaders/NegralunaDelusions.png" onclick="filtros('Madness%20at%20the%20Darkmoon%20Faire')"  alt=""></a>
             </div>
-            <div class="col-lg-3 col-sm-6 text-center expansaoHover">
+            <div class="col-lg-3 col-sm-6 text-center expansaoHover" id="nathiria">
               <a class="ponteiro"><img src="./images/ClassHeaders/MurderOnNathiriaCastle.png" onclick="filtros('Murder%20at%20Castle%20Nathria')"  alt=""></a>
             </div>
-            <div class="col-lg-3 col-sm-6 text-center expansaoHover">
+            <div class="col-lg-3 col-sm-6 text-center expansaoHover" id="naxx">
               <a class="ponteiro"><img class="w-75" src="./images/ClassHeaders/CurseOfNaxxramas.png"  alt="" onclick="filtros('Naxxramas')"></a>
             </div>
           </div>
+          
 
           <!-- ***** Most Popular Start ***** -->
           <div class="most-popular">
@@ -118,13 +120,14 @@ https://templatemo.com/tm-579-cyborg-gaming
             
                 </div>
                   <div class="search-input">
-                    <form id="search" action="#">
-                      <input class="form-control text-center w-50 m-auto bg-opacity-25 text-bg-danger bg-black border-info p-3" type="text" placeholder="Digite o nome de uma carta:" id="searchText" name="searchKeyword" onkeyup="pesquisaCards()">
-                      <i class="fa fa-search"></i>
-                    </form>
+                    <input autocomplete="off" class="form-control text-center w-75 m-auto bg-opacity-25 text-bg-danger bg-black border-info p-2" type="text" placeholder="Digite o nome de uma carta:" id="searchText" name="searchKeyword" onkeyup="pesquisaCards()">
+                  </div>
+                  <div>
+                    <h6 class="m-5 mb-2" id="conjuntoNome">Conjunto:</h6>
+                  </div>
                   </div>
                   <div id="teste">
-                      
+                   
                   </div>
                 </div>
               </div>
@@ -139,16 +142,10 @@ https://templatemo.com/tm-579-cyborg-gaming
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-lg-2">
-          <img class="mt-4 m-auto w-50" src="./assets/images/BlizzardLogo.png" alt="">
-        </div>
-        <div class="col-lg-8">
+        <div class="col-lg-12 text-center">
           <p>Copyright © 2036 - <a href="#">Free Bootstrap template Cyborg Gaming</a> - Adaptado por Gabriel Lunelli - Github <a href="https://github.com">Lunelli2k</a>. 
           
           <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo |</a>  Distributed By <a href="https://themewagon.com" target="_blank" >ThemeWagon</a></p>
-        </div>
-        <div class="col-lg-2"> 
-          <img class="mt-4 float-end w-75" src="./assets/images/hearthstoneLogo.png" alt="">
         </div>
       </div>
     </div>

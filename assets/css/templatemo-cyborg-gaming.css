@@ -41,33 +41,7 @@ figure, header, nav, section, article, aside, footer, figcaption {
   outline: 0;
 }
 
-.ponteiro{
-  cursor: pointer;
-}
-.expansaoHover:hover{
-  padding: 0.3%;
-}
 
-.versoHover:hover{
-  padding: 0.5%;
-}
-.backVerso {
-  background-color: #353637;
-}
-
-.backVersoBackground{
-  background-color:#1f2122
-}
-#nomeVerso{
-  color: brown;
-}
-.textoFormat{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 100%;
-  color: #ffffff;
-  text-align: justify;
-  margin-top: auto;
-}
 .clearfix:after {
   content: ".";
   display: block;
@@ -663,9 +637,25 @@ Header Style
   .header-area .main-nav:before {
     display: none;
   }
+  .cartasHover:hover{
+    width: 35%;
+    cursor: pointer;
+    margin: -0.5%;
+    transition: all 0.3s;
+    
+  }
 }
 
 @media (max-width: 992px) {
+
+  .cartasHover:hover{
+    width: 35%;
+    cursor: pointer;
+    margin: -0.5%;
+    transition: all 0.3s;
+    
+  }
+
   .header-area {
     top: 0;
   }
@@ -804,18 +794,146 @@ Header Style
 Banner Style
 --------------------------------------------- 
 */
+.tamanhoImagem{
+  height: 404px;
+}
+
+.apiHover{
+  cursor: pointer;
+  opacity: 95%;
+}
+.apiHover:hover{
+  opacity: 100%;
+}
+
+.apiLogo{
+  border-radius: 15px;
+}
+
+.tituloNoticia{
+  text-align: center;
+  
+}
+
+.ponteiro{
+  cursor: pointer;
+}
+.expansaoHover{
+  opacity: 15%;
+  filter: blur(2px);
+}
+.expansaoHover:hover{
+  filter: blur(0px);
+  opacity: 100%;
+  transition: all 0.5s;
+}
+.expansaoAtiva{
+  filter: blur(0px);
+  opacity: 100%;
+}
+
+.versoHover{
+  filter: saturate(0%);
+}
+
+.versoHover:hover{
+  filter: saturate(100%);
+  transition: all 0.7s;
+}
+.backVerso {
+  background-color: #353637;
+}
+
+.backVersoBackground{
+  background-color:#1f2122
+}
+#nomeVerso{
+  color: brown;
+}
+.textoFormat{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 100%;
+  color: #ffffff;
+  text-align: justify;
+  margin-top: auto;
+}
+
 .cartasHover{
-  opacity: 70%;
+  padding-left: 1.8%;
+  margin-left: -0.5px;
+  
 }
 
 .cartasHover:hover{
-  opacity: 100%;
+  width: 26%;
+  cursor: pointer;
+  margin: -0.5%;
+  transition: all 0.3s;
   
-  cursor: pointer;
 }
-.qualitySize:hover{
-  padding: 0.15%;
-  cursor: pointer;
+
+
+/**Responsividade cartas*/
+
+@media only screen and (min-width: 100px) and (max-width: 995px){
+
+  .cartasHover:hover{
+    width: 51%;
+    cursor: pointer;
+    margin: -0.5%;
+    transition: all 0.3s;
+    
+  }
+
+  .tamanhoImagem{
+    height: 300px;
+  }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1000px){
+
+  .cartasHover:hover{
+    width: 34%;
+    cursor: pointer;
+    margin: -0.5%;
+    transition: all 0.3s;
+    
+  }
+}
+
+@media only screen and (min-width: 560px) and (max-width: 760px){
+
+  .cartasHover:hover{
+    width: 51%;
+    cursor: pointer;
+    margin: -0.5%;
+    transition: all 0.3s;
+    
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 560px){
+
+  .cartasHover:hover{
+    width: 101%;
+    cursor: pointer;
+    margin: -0.5%;
+    transition: all 0.3s;
+    
+  }
+}
+
+.testeHover{
+
+  filter: blur(2px)
+ 
+}
+
+
+.testeHover:hover{
+  filter: saturate(100%);
+  transition: all 0.5s;
+  background-color: #a674c4;
 }
 
 .main-banner {
@@ -1160,7 +1278,7 @@ Featured Games Style
   height: 46px;
   text-align: center;
   line-height: 46px;
-  color: #ec6090;
+  color: #9b4bca;
   background-color: #27292a;
   border-radius: 50%;
 }
@@ -1177,7 +1295,7 @@ Featured Games Style
 
 .top-downloaded .text-button a {
   font-weight: 600;
-  color: #ec6090;
+  color: #9b4bca;
   font-size: 15px;
 }
 
@@ -1251,7 +1369,7 @@ Live Stream Style
 
 .live-stream .hover-effect .live a { 
   position: absolute;
-  background-color: rgba(236, 96, 144, 0.9);
+  background-color: #9b4bca;
   padding: 5px 10px;
   border-radius: 23px;
   color: #fff;
@@ -1273,7 +1391,7 @@ Live Stream Style
 }
 
 .live-stream .hover-effect ul li a {
-  background-color: rgba(236, 96, 144, 0.9);
+  background-color: #9b4bca;
   padding: 5px 10px;
   border-radius: 23px;
   color: #fff;
@@ -1286,7 +1404,7 @@ Live Stream Style
 
 .live-stream span i {
   color: #fff;
-  background-color: #ec6090;
+  background-color: #9b4bca;
   border-radius: 50%;
   font-size: 12px;
   width: 20px;
@@ -1299,7 +1417,7 @@ Live Stream Style
 
 .live-stream span {
   font-size: 14px;
-  color: #ec6090;
+  color: #9b4bca;
 }
 
 .live-stream .down-content h4 {
@@ -1339,7 +1457,7 @@ Featured Banner Style
   display: inline-block;
   text-align: center;
   line-height: 46px;
-  color: #ec6090;
+  color: #9b4bca;
 }
 
 /* 
@@ -1399,7 +1517,7 @@ Game Details Style
 }
 
 .game-details .content .left-info ul li:last-child i {
-  color: #ec6090;
+  color: #9b4bca;
 }
 
 .game-details .content .right-info {
@@ -1427,7 +1545,7 @@ Game Details Style
 } 
 
 .game-details .content .right-info ul li i {
-  color: #ec6090;
+  color: #9b4bca;
 }
 
 .game-details .main-border-button {
@@ -1494,7 +1612,7 @@ Other Related Style
 }
 
 .other-games ul li:last-child i {
-  color: #ec6090;
+  color: #9b4bca;
 }
 
 /* 
@@ -1537,13 +1655,13 @@ Top Streamers Style
 .top-streamers ul li h6 {
   display: inline;
   font-size: 14px;
-  color: #ec6090;
+  color: #9b4bca;
   font-weight: 400;
 }
 
 .top-streamers ul li h6 i {
   color: #fff;
-  background-color: #ec6090;
+  background-color: #9b4bca;
   border-radius: 50%;
   font-size: 12px;
   width: 20px;
@@ -1613,7 +1731,7 @@ Profile Style
 .main-profile ul li span {
   float: right;
   font-weight: 500;
-  color: #ec6090;
+  color: #9b4bca;
 }
 
 .main-profile ul li:last-child {
@@ -1655,7 +1773,7 @@ Profile Style
     display: inline-block;
     text-align: center;
     line-height: 46px;
-    color: #ec6090;
+    color: #9b4bca;
 }
 
 .clips .item h4 {
@@ -1664,7 +1782,7 @@ Profile Style
 }
 
 .clips .item span i {
-  color: #ec6090;
+  color: #9b4bca;
 }
 
 .clips .item span {
