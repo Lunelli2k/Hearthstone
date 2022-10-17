@@ -875,6 +875,63 @@ Banner Style
 
 /**Responsividade cartas*/
 
+/** tamanho telas enormes */
+@media only screen and (min-width: 1000px) and (max-width: 1600px){
+
+  .cartasHover:hover{
+    width: 34%;
+    cursor: pointer;
+    margin: -0.5%;
+    transition: all 0.3s;
+    
+  }
+.tamanhoImagem{
+    height: 400px;
+  }
+}
+
+/** tamanho telas grandes */
+@media only screen and (min-width: 760px) and (max-width: 1000px){
+
+  .cartasHover:hover{
+    width: 34%;
+    cursor: pointer;
+    margin: -0.5%;
+    transition: all 0.3s;
+    
+  }
+.tamanhoImagem{
+    height: 270px;
+  }
+}
+/* tamanho médio*/
+@media only screen and (min-width: 560px) and (max-width: 760px){
+
+  .cartasHover:hover{
+    width: 51%;
+    cursor: pointer;
+    margin: -0.5%;
+    transition: all 0.3s;
+    
+  }
+.tamanhoImagem{
+height: 200px;
+  }
+}
+}
+
+/* Celular padrão */
+@media only screen and (min-width: 360px) and (max-width: 560px){
+
+  .cartasHover:hover{
+    width: 101%;
+    cursor: pointer;
+    margin: -0.5%;
+    transition: all 0.3s;
+    
+  }
+}
+/* Menor tamanho */
 @media only screen and (min-width: 100px) and (max-width: 995px){
 
   .cartasHover:hover{
@@ -887,39 +944,6 @@ Banner Style
 
   .tamanhoImagem{
     height: 300px;
-  }
-}
-
-@media only screen and (min-width: 760px) and (max-width: 1000px){
-
-  .cartasHover:hover{
-    width: 34%;
-    cursor: pointer;
-    margin: -0.5%;
-    transition: all 0.3s;
-    
-  }
-}
-
-@media only screen and (min-width: 560px) and (max-width: 760px){
-
-  .cartasHover:hover{
-    width: 51%;
-    cursor: pointer;
-    margin: -0.5%;
-    transition: all 0.3s;
-    
-  }
-}
-
-@media only screen and (min-width: 360px) and (max-width: 560px){
-
-  .cartasHover:hover{
-    width: 101%;
-    cursor: pointer;
-    margin: -0.5%;
-    transition: all 0.3s;
-    
   }
 }
 
