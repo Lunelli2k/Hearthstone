@@ -11,10 +11,8 @@ function filtros(expansao){
     requisicao.open("GET", "https://omgvamp-hearthstone-v1.p.rapidapi.com/cards/sets/"+expansaoFiltro+"?collectible=1&locale=ptBR", false);
     requisicao.setRequestHeader("X-RapidAPI-Key", "c8cc595170mshda399f5c2f87254p1f3d2fjsn5e58bc5be333");
     requisicao.setRequestHeader("X-RapidAPI-Host", "omgvamp-hearthstone-v1.p.rapidapi.com");
-    $("#js-preloader").show();
     requisicao.send(data);
     var retorno = JSON.parse(requisicao.responseText);
-    $("#js-preloader").hide();
     var cartas = document.getElementById("teste");
     cartas.innerHTML = '';
     
