@@ -879,7 +879,7 @@ Banner Style
 @media only screen and (min-width: 1000px) and (max-width: 1600px){
 
   .cartasHover:hover{
-    width: 34%;
+    width: 31%;
     cursor: pointer;
     margin: -0.5%;
     transition: all 0.3s;
@@ -905,34 +905,35 @@ Banner Style
   }
 }
 /* tamanho médio*/
-@media only screen and (min-width: 560px) and (max-width: 760px){
+@media only screen and (min-width: 991px){
 
   .cartasHover:hover{
-    width: 51%;
+    width: 26%;
     cursor: pointer;
     margin: -0.5%;
     transition: all 0.3s;
     
   }
 .tamanhoImagem{
-height: 200px;
+height: 90.5%;
   }
 }
-}
-
-/* Celular padrão */
-@media only screen and (min-width: 360px) and (max-width: 560px){
+/* Menor tamanho */
+@media only screen and (min-width: 767px) and (max-width: 991px){
 
   .cartasHover:hover{
-    width: 101%;
+    width: 34.5%;
     cursor: pointer;
     margin: -0.5%;
     transition: all 0.3s;
     
   }
+
+  .tamanhoImagem{
+    height: 87%;
+  }
 }
-/* Menor tamanho */
-@media only screen and (min-width: 100px) and (max-width: 995px){
+@media only screen and (min-width: 576px) and (max-width: 767px){
 
   .cartasHover:hover{
     width: 51%;
@@ -946,6 +947,24 @@ height: 200px;
     height: 300px;
   }
 }
+
+/* Celular padrão */
+@media only screen and (min-width: 360px) and (max-width: 560px){
+
+  .cartasHover:hover{
+    width: 101%;
+    cursor: pointer;
+    margin: -0.5%;
+    transition: all 0.3s;
+    
+  }
+
+  .tamanhoImagem{
+    height: 85%;
+  }
+
+}
+
 
 .testeHover{
 
