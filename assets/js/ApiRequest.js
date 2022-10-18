@@ -15,7 +15,7 @@ function filtros(expansao){
     var retorno = JSON.parse(requisicao.responseText);
     var cartas = document.getElementById("teste");
     cartas.innerHTML = '';
-    
+    console.log(retorno)
     for(i in retorno){
         var imagem = retorno[i].img;
         
