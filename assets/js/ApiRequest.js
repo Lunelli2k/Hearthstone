@@ -76,7 +76,7 @@ function pesquisaCards(){
     var retorno = JSON.parse(buscaReq.responseText);
         var cartas = document.getElementById("teste");
     cartas.innerHTML = '';
-    for(i in retorno){
+    for(i = 0; i <=15; i++){
         var imagem = retorno[i].img;
         if (cardName != retorno[i].name) {
             if (imagem != null) {
