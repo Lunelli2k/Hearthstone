@@ -71,7 +71,7 @@ function pesquisaCards(){
 
     buscaReq.send(data);
     var retorno = JSON.parse(buscaReq.responseText);
-        var cartas = document.getElementById("teste");
+        var cartas = document.getElementById("cartas");
     cartas.innerHTML = '';
     for(i in retorno){
         var imagem = retorno[i].img;
