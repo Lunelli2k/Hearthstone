@@ -1,4 +1,4 @@
-
+/* Filtro por Expansão */
 function filtros(expansao){
     
     var expansaoFiltro = expansao
@@ -60,7 +60,7 @@ function filtros(expansao){
         nome.innerHTML = ' Conjunto: Clássico'
     }
 }
-
+/* Filtro de pesquisa */
 function pesquisaCards(){
     var textoBusca = document.getElementById('searchText').value;
     const data = null;
@@ -98,6 +98,7 @@ function pesquisaCards(){
     nome.innerHTML = '';
 }   
 
+/* Busca Versos */
 function versos(){
 
     const data = null;
@@ -167,8 +168,7 @@ function versos(){
 }
 versos();
 
-
-MostraModal();
+/* Carrega Detalhes dos versos */
 function carregaDetalhes(id){
     var idVerso = id;
     const data = null;
